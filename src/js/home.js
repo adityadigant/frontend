@@ -702,8 +702,8 @@ function subDuties(j) {
 
 function openCamera() {
 
-  // history.pushState(null, null, "/upload-photo");
-  
+  disableBack();
+
   if (_native.getName() === "Android") {
     AndroidInterface.startCamera("setFilePath");
     return;
